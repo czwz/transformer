@@ -1,0 +1,20 @@
+/Users/raven/myProjects/transformer/target/debug/deps/libzip-9a57a608b5f014c7.rmeta: /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/lib.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/compression.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/cp437.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/crc32.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/mod.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/extended_timestamp.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read/stream.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/result.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/spec.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/types.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/write.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/zipcrypto.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/unstable.rs
+
+/Users/raven/myProjects/transformer/target/debug/deps/zip-9a57a608b5f014c7.d: /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/lib.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/compression.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/cp437.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/crc32.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/mod.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/extended_timestamp.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read/stream.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/result.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/spec.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/types.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/write.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/zipcrypto.rs /Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/unstable.rs
+
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/lib.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/compression.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/cp437.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/crc32.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/mod.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/extra_fields/extended_timestamp.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/read/stream.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/result.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/spec.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/types.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/write.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/zipcrypto.rs:
+/Users/raven/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zip-1.1.4/src/unstable.rs:
+
+# env-dep:CARGO_PKG_VERSION=1.1.4

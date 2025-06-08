@@ -1,5 +1,7 @@
 mod tokenizer;
 
 fn main() {
-    tokenizer::tokentrainers::say_hello();
+    if let Err(e) = tokenizer::tokentrainers::word_level_tokenizer() {
+        eprintln!("Error: {}", e);
+    }
 }

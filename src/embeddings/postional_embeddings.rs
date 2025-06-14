@@ -3,10 +3,10 @@ use candle_nn::{Dropout};
 
 #[allow(dead_code)]
 pub struct PositionalEmbeddings {
-    positional_embeddings: Tensor,
-    seq_len: usize,
-    d_model: usize,
-    dropout: Dropout,
+    pub positional_embeddings: Tensor,
+    pub seq_len: usize,
+    pub d_model: usize,
+    pub dropout: Dropout,
 }
 
 #[allow(dead_code)]
@@ -36,20 +36,18 @@ impl PositionalEmbeddings {
         
         // Shape: (seq_len, d_model)
         let temp = (positions.matmul(&denomiators))?;
-
         let even_embeddings = temp.sin()?;
         let odd_embeddings = temp.cos()?;
         let even_col_0 = even_embeddings.get_on_dim(1, 0)?;
         let odd_col_0 = odd_embeddings.get_on_dim(1, 0)?;
 
         let mut positional_embeddings = Tensor::cat(&[&even_col_0, &odd_col_0], 0)?;
-        for col in 1..d_model {
+        for col in 1..d_model / 2 {
             let even_col = even_embeddings.get_on_dim(1, col)?;
             let odd_col = odd_embeddings.get_on_dim(1, col)?;
             positional_embeddings = Tensor::cat(&[&positional_embeddings, &even_col], 0)?;
             positional_embeddings = Tensor::cat(&[&positional_embeddings, &odd_col], 0)?;
         }
-
         // Shape: (1, seq_len, d_model)
         positional_embeddings = positional_embeddings
             .reshape((d_model, seq_len))?

@@ -13,14 +13,22 @@ fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     println!("tok: {:?}", encoding.get_tokens());
     println!("ids: {:?}", encoding.get_ids());
 
-    let e = embeddings::postional_embeddings::PositionalEmbeddings::new(
+    let pe = embeddings::postional_embeddings::PositionalEmbeddings::new(
         512,
         768,
         candle_nn::Dropout::new(0.1),
         &Device::Cpu,
-    ).unwrap();
+    )?;
 
-    println!("Positional Embeddings: {:?}", e.positional_embeddings);
+    println!("Positional Embeddings: {:?}", pe.positional_embeddings);
+
+    let we = embeddings::word_embeddings::WordEmbeddings::new(
+        tokenizer.get_vocab_size(true),
+        768,
+        &Device::Cpu,
+    )?;
+
+    println!("Word Embeddings: {:?}", we.word_embedding);
 
     Ok(())
 }

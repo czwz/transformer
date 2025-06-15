@@ -63,4 +63,10 @@ impl PositionalEmbeddings {
             }
         )
     }
+
+    #[allow(dead_code)]
+    pub fn forward(&self, tensor: Tensor) -> Result<Tensor> {
+        let concatenated = (&self.positional_embeddings + tensor)?;
+        self.dropout.forward(&concatenated, false)
+    }
 }

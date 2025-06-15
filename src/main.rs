@@ -3,7 +3,7 @@ use tokenizers::tokenizer::Tokenizer;
 
 mod embeddings;
 
-const D_MODEL: usize = 768;
+const D_MODEL: usize = 512;
 
 fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let tokenizer = Tokenizer::from_file("./wordlevel-wiki.json")?;
@@ -16,7 +16,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     println!("ids: {:?}", encoding.get_ids());
 
     let pe = embeddings::postional_embeddings::PositionalEmbeddings::new(
-        512,
+        768,
         D_MODEL,
         candle_nn::Dropout::new(0.1),
         &Device::Cpu,

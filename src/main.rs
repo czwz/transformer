@@ -3,6 +3,8 @@ use tokenizers::tokenizer::Tokenizer;
 
 mod embeddings;
 
+const D_MODEL: usize = 768;
+
 fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
     let tokenizer = Tokenizer::from_file("./wordlevel-wiki.json")?;
     let encoding = tokenizer.encode(
@@ -15,7 +17,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
     let pe = embeddings::postional_embeddings::PositionalEmbeddings::new(
         512,
-        768,
+        D_MODEL,
         candle_nn::Dropout::new(0.1),
         &Device::Cpu,
     )?;
@@ -24,7 +26,7 @@ fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
 
     let we = embeddings::word_embeddings::WordEmbeddings::new(
         tokenizer.get_vocab_size(true),
-        768,
+        D_MODEL,
         &Device::Cpu,
     )?;
 

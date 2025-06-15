@@ -39,12 +39,12 @@ impl PositionalEmbeddings {
         let even_embeddings = temp.sin()?;
         let odd_embeddings = temp.cos()?;
         let even_col_0 = even_embeddings.get_on_dim(1, 0)?;
-        let odd_col_0 = odd_embeddings.get_on_dim(1, 0)?;
+        let odd_col_0 = odd_embeddings.get_on_dim(1, 1)?;
 
         let mut positional_embeddings = Tensor::cat(&[&even_col_0, &odd_col_0], 0)?;
         for col in 1..d_model / 2 {
-            let even_col = even_embeddings.get_on_dim(1, col)?;
-            let odd_col = odd_embeddings.get_on_dim(1, col)?;
+            let even_col = even_embeddings.get_on_dim(1, col * 2)?;
+            let odd_col = odd_embeddings.get_on_dim(1, col * 2 + 1)?;
             positional_embeddings = Tensor::cat(&[&positional_embeddings, &even_col], 0)?;
             positional_embeddings = Tensor::cat(&[&positional_embeddings, &odd_col], 0)?;
         }
